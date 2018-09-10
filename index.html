@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--Allows Devices to Load Size of Site Correctly-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<!--Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,400,700" rel="stylesheet">
+		<!--Font Awesome Icons-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function myFunction() {
+			    var x = document.getElementById("nav-bar");
+			    if (x.className === "topnav") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "topnav";
+			    }
+			}
+		</script>
+		<title>The Gallery Landing Page</title>
+	</head>
+
+	<!----------------------------------------------
+	Ideas & Notes:  
+			Update Idea: with JS, make price boxes pop out upon hover (add box shadows to each one on hover, increase box size, and change z index)
+			Create overlay pop up window for sign in and sign up buttons when clicked, where user can either sign up or in depending on button clicked (so this would be two window options)
+	----------------------------------------------->
+
+
+	<body>
+		<div id="img-container">
+			
+			<!----------------------------------------------
+			header block
+			----------------------------------------------->
+			<header id="header">
+				<img src="#"/>
+				<!-----------Nav------------->
+				<nav class="topnav" id="nav-bar">
+					<ul id="nav-bar-left">
+						<li class="nav-item">
+							<a class="nav-link" id="nav-home" href="#img-container">Home</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" id="nav-shop" href="#img-container">Shop Frames</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="nav-plans" href="#pricing-container">Plans &amp; Pricing</a>
+						</li>
+					</ul>
+
+					<ul id="nav-bar-right">
+						<li class="nav-item">
+							<a class="nav-link" id="nav-up" href="#img-container">Sign Up</a>
+						</li>
+						<li class="nav-item"><p>|</p></li>
+						<li class="nav-item">
+							<a class="nav-link" id="nav-in" href="#img-container">Sign In</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="bar-icon" onclick="myFunction()">
+    							<i class="fa fa-bars"></i>
+  							</a>
+  						</li>
+					</ul>
+				</nav>
+				<!-----------Headings------------->
+				<div id="main-headings">
+					<h1>The Gallery</h1>
+					<h2>Frame Your World</h2>
+				</div>
+				<p id="email-heading">Store, organize, print and frame your photos all in one place!</p>
+				
+				<!-----------email input------------->
+				<form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+					<input id="email" class="email-text" name="email" type="email" required placeholder="Enter your email here." maxlength="50" cols="50"/>
+					<div id="btn-container">
+						<input id="submit" type="submit" value="Get Started"/>
+					</div>
+				</form>
+			</header>
+
+			<div id="main">
+				<!----------------------------------------------
+				Overview
+				----------------------------------------------->
+				<div id="overview-container">
+					<div class="overview">
+						<div class="overview-icon">
+							<img src="assets/computer-icon.svg" alt="Computer Icon"/>
+						</div>
+						<div class="overview-txt" id="overview-how">
+							<h3>How it works</h3>
+							<p>Here at The Gallery, we walk you through every step of your photo journey. Create a free account to upload and store your photos, easily organize and search for them, and order physical copies of your favorites. Go to <a href="#">plans and pricing</a> or <a href="#">set up your free account now</a>.</p>
+						</div>
+					</div>
+					<div class="overview" id="col-right">
+						<div class="overview-icon">
+							<img src="assets/frame-icon.svg" alt="Frame Icon"/>
+						</div>
+						<div class="overview-txt" id="overview-frames">
+							<h3>Our Frames</h3>
+							<p>We have frames for every style! Antique, modern, rustic, we have it! Finding frames in the store that look good once you get home can be a challenge. Why not have frames available when you actully order your photos so that you know exactly what your pairing? <a href="#">Find your perfect fit</a>!</p>
+						</div>
+					</div>
+				</div>
+				<!----------------------------------------------
+				Shop Frames
+				----------------------------------------------->
+				<!-- <div id="frames-container">
+					<h2>Shop Frames</h2>
+					<div class="shop-frames" id="antique-frames">
+						<div class="img-wrapper" id="img-wrapper-antique"> -->
+							<!-- <img src="assets/autoestima-cidada-682096-unsplash.jpg" alt="Antique Frames"/> -->
+						<!-- </div>
+						<p id="antique-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis tincidunt lorem, ornare vulputate metus mattis semper. Nunc pellentesque sem vitae nunc placerat tincidunt. Nulla sagittis mi vitae purus dictum, vitae mollis justo dignissim.</p>
+					</div>
+					<div class="shop-frames" id="classic-frames">
+						<div id="classic-p-wrapper">
+							<p id="classic-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis tincidunt lorem, ornare vulputate metus mattis semper. Nunc pellentesque sem vitae nunc placerat tincidunt.</p>
+						</div>
+						<div class="img-wrapper" id="img-wrapper-classic"> -->
+							<!-- <img src="assets/nathan-dumlao-704162-unsplash.jpg" alt="Classic Frames"/> -->
+						<!-- </div>
+					</div>
+				</div> -->
+				<!----------------------------------------------
+				Pricing
+				----------------------------------------------->
+				<div id="pricing-container">
+					<div class="price-box" id="price-box1">
+						<h3>Basic</h3>
+						<h4>Free</h4>
+						<button class="price-button">Start Now</button>
+						<p>15GB Storage</p>
+						<p>1 User</p>
+						<p>Organize Photos with Folders</p>
+						<p>-</p>
+						<p>20% Off Your First Purchase</p>
+						<p>-</p>
+					</div>
+					<div class="price-box" id="price-box2">
+						<p>Most Popular</p>
+						<h3>Pro</h3>
+						<h4>&#36;8&#47;month</h4>
+						<button class="price-button">Start Free Trial</button>
+						<p>50GB Storage</p>
+						<p>4 Users</p>
+						<p>Organize Photos with Folders</p>
+						<p>Keyword Tag Photos</p>
+						<p>20% Off Your First Purchase</p>
+						<p>Exclusive Sale Events</p>
+					</div>
+					<div class="price-box" id="price-box3">
+						<h3>Business</h3>
+						<h4>&#36;50&#47;month</h4>
+						<button class="price-button">Start Free Trial</button>
+						<p>500GB Storage</p>
+						<p>10 Users</p>
+						<p>Organize Photos with Folders</p>
+						<p>Keyword Tag Photos</p>
+						<p>20% Off Your First Purchase</p>
+						<p>Exclusive Sale Events</p>
+					</div>
+				</div>
+					<!----------------------------------------------
+					Video
+					----------------------------------------------->
+				<div id="video-section">
+					<div class="video-container">
+						<iframe id="video" src="https://www.youtube.com/embed/Any5uH2Jyu8" allowfullscreen></iframe>
+					</div>
+					<div id="video-desc">
+						<h3>Choosing the Right Frame</h3>
+						<p>Donec bibendum convallis bibendum. Vivamus nec malesuada tortor. Ut accumsan libero eu odio pulvinar scelerisque. Integer mi ante, vehicula ut est sed, tincidunt euismod mi. Maecenas leo turpis, interdum vitae odio eu, lobortis tempor leo.</p>
+					</div>
+				</div>
+			</div>
+			<!----end "main" section----->
+		
+		<!----------------------------------------------
+		Footer
+		----------------------------------------------->
+			<footer>
+				<div id="footer-nav-ul">
+					<p class="footer-nav-item">
+						<a href="#" class="footer-link" id="about" target="blank">About</a>
+					</p>
+					<p class="footer-nav-item">
+						<a href="#" class="footer-link" id="terms" target="blank">Terms &amp; Conditions</a>
+					</p>
+					<p class="footer-nav-item">
+						<a href="#" class="footer-link" id="contact" target="blank">Contact</a>
+					</p>
+				</div>	
+				<div id="social-icon-ul">
+					<p class="social-icon">
+						<a href="#" class="social-link" target="blank">
+							<i class="fab fa-facebook-f fa-lg"></i>
+						</a>
+					</p>
+					<p class="social-icon">
+						<a href="#" class="social-link" target="blank">
+							<i class="fab fa-twitter fa-lg"></i>
+						</a>
+					</p>
+					<p class="social-icon">
+						<a href="#" class="social-link" target="blank">
+							<i class="fab fa-instagram fa-lg"></i>
+						</a>
+					</p>
+				</div>
+				<p id="footer-p">&copy; 2018 Katie Malmay</p>
+			</footer>
+		</div>
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
