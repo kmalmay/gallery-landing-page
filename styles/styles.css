@@ -82,30 +82,23 @@ html, body {
 }
 
 #main {
-	width: 80%;
 	margin: 0 auto 0 auto;
 	padding: 5em 2em 3em 2em;
 	background-color: white;
 }
 
 h1 {
-	font-size: 4.5em;
+	font-size: 5rem;
 	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	color: rgb(0,210,255); /*light blue*/
-	margin: 0;
-	padding: 1em 0 0 0;
-	clear: both;
-
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 2rem;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: rgb(237,68,47); /*red*/
-	margin: 0 0 0 0.15em;
-	padding: 0;
 	letter-spacing: 2px;
 }
 
@@ -163,7 +156,6 @@ li {
 ------------------------------*/
 
 #header {
-	width: 80%;
 	margin: 0 auto 0 auto;
 	padding: 1em 2em 2em 2em;
 	background-color: rgba(41,47,61,0.85); /*navy*/
@@ -208,17 +200,24 @@ header a {
 /* Headings (h1 & h2 can be found in Global Styles)*/
 
 #main-headings {
-	/*display: inline-block;*/
-	width: 292px;
-	margin: 0 auto;
-	padding: 3em 0 2em 0;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
+	text-align: center;
+}
+
+.nested-headings {
+	display:inline-block;
 	text-align: left;
+}
+
+.header-tagline {
+	padding-left: 0.35rem;
 }
 
 #email-heading {
 	color: rgb(0,210,255); /*light blue*/
 	font-weight: 400;
-	padding: 4em 0 1em 0;
+	margin-bottom: 1rem;
 	text-align: center;
 }
 
@@ -488,8 +487,7 @@ button:hover {
 ------------------------------*/
 
 footer {
-	background-color: rgb(41,47,61); /*navy*/
-	width: 80%; 
+	background-color: rgb(41,47,61); /*navy*/ 
 	margin: 0 auto 0 auto; 
 	padding: 0 2em 0 2em;
 }
@@ -640,7 +638,7 @@ footer p, footer a {
 /*phone sizes*/
 @media screen and (max-width: 330px) {
 	#main-headings {
-		width: 80%;
+		width: 275px;
 		margin: 0 auto;
 		text-align: left;
 	}
@@ -656,3 +654,12 @@ footer p, footer a {
 
 }
 
+/*----------------------------------------------------------------------------
+New Mobile First Code 
+----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 663px) {
+	#header, #main, footer  {
+		width: 80%;	
+	}
+}
