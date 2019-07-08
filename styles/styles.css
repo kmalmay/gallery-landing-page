@@ -212,6 +212,7 @@ li {
 #email-heading {
 	color: rgb(0,210,255); /*light blue*/
 	margin-bottom: 2rem;
+	line-height: 1.3rem;
 	text-align: center;
 }
 
@@ -603,28 +604,23 @@ footer {
 }
 
 /*phone sizes*/
-@media screen and (max-width: 330px) {
-	#main-headings {
-		width: 275px;
-		margin: 0 auto;
-		text-align: left;
-	}
+@media screen and (max-width: 390px) {
 	h1 {
-		font-size: 4em;
+		font-size: 3.5rem;
 	}
+
 	h2 {
-		font-size: 1.8em;
+		font-size: 1.3rem;
 	}
+
 	.overview-icon {
 		display: none;
 	}
 
-}
-
+	
 /*----------------------------------------------------------------------------
-New Mobile First Code 
+Mobile First Media Queries
 ----------------------------------------------------------------------------*/
-
 @media screen and (min-width: 663px) {
 	#header, #main, footer  {
 		width: 80%;	
@@ -637,3 +633,4 @@ New Mobile First Code
 		margin-top: 0;
 	}
 }
+
