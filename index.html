@@ -1,25 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<!--Allows Devices to Load Size of Site Correctly-->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<!--Google Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,400,700" rel="stylesheet">
 		<!--Font Awesome Icons-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-		<script>
-		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-			function myFunction() {
-			    var x = document.getElementById("nav-bar");
-			    if (x.className === "topnav") {
-			        x.className += " responsive";
-			    } else {
-			        x.className = "topnav";
-			    }
-			}
-		</script>
 		<title>The Gallery Landing Page</title>
 	</head>
 
@@ -176,7 +165,7 @@
 					</div>
 					<div id="video-desc">
 						<h3>Choosing the Right Frame</h3>
-						<p>Donec bibendum convallis bibendum. Vivamus nec malesuada tortor. Ut accumsan libero eu odio pulvinar scelerisque. Integer mi ante, vehicula ut est sed, tincidunt euismod mi. Maecenas leo turpis, interdum vitae odio eu, lobortis tempor leo.</p>
+						<p>Every photograph captures a unique and special moment. We know how important it is to represent that moment as accurately as possible. The right frame can make your photo shine! Watch this helpful video to learn how to choose the best frame for your photo.</p>
 					</div>
 				</div>
 			</div>
@@ -217,7 +206,17 @@
 				<p id="footer-p">&copy; 2018 Katie Malmay</p>
 			</footer>
 		</div>
-		
+		<script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+			function myFunction() {
+				var x = document.getElementById("nav-bar");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>	
 	</body>
 </html>
 
