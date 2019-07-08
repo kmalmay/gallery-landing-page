@@ -128,7 +128,7 @@ p {
 }
 
 h3 + p {
-	line-height: 1.3em;
+	line-height: 1.3rem;
 }
 
 a {
@@ -356,8 +356,8 @@ form {
 ------------------------------*/
 
 #pricing-container {
-	margin: 3em -2em 3em -2em;
-	padding: 3em 0 3em 0;
+	margin: 3rem -2rem 3rem -2rem;
+	padding: 3rem 0 3rem 0;
 	background-image: url("../assets/toa-heftiba-214333-unsplash-min.jpg");
 	background-position: center;
 	background-size: cover;
@@ -370,7 +370,7 @@ form {
 
 .price-box {
 	margin-bottom: 0;
-	padding: 2em;
+	padding: 2rem;
 	height: auto;
 	width: auto;
 	justify-content: center;
@@ -387,7 +387,7 @@ form {
 
 #price-box2 {
 	border-radius: 5px;
-	padding-top: 1em;
+	padding-top: 0.3rem;
 	background-color: rgba(255,255,255,0.9);
 	box-shadow: 0.5em 0 1.5em rgb(123,123,123,0.35), -0.5em 0 1.5em rgb(123,123,123,0.35);
 	z-index: 10;
@@ -431,12 +431,12 @@ button:hover {
 
 .price-box p:first-child {
 	font-family: 'Dancing Script', cursive;
-	font-size: 2.5em;
+	font-size: 2em;
 	color: rgb(237,68,47);
-	padding-bottom: 0em;
+	padding-bottom: 0;
 	border-bottom: solid rgb(0,210,255); 
 	border-width: thin;
-	margin-bottom: 1.15em; /*keeps text even across boxes*/
+	margin-bottom: 1.4rem; /*keeps text even across boxes*/
 }
 
 
@@ -467,7 +467,7 @@ button:hover {
 
 #video-desc {
 	width: 33%;
-	margin: 1.5em 0 0 1.5em;
+	margin: 1.5em 0 0 1.5rem;
 }
 
 /* Footer
