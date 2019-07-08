@@ -106,7 +106,8 @@ h3 {
 	font-size: 1.5rem;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	line-height: 1rem;
+	color: rgb(0,116,141); /*dark blue*/
+	line-height: 1.5rem;
 	letter-spacing: 1px;
 }
 
@@ -283,7 +284,6 @@ form {
 }
 
 .overview-heading {
-	color: rgb(0,116,141); /*dark blue*/
 	margin: 0 0 0.8rem 0;
 }
 
@@ -481,22 +481,8 @@ footer {
 	background-color: rgb(41,47,61); /*navy*/ 
 	margin: 0 auto 0 auto; 
 	padding: 0 2rem 0 2rem;
+	text-align: center;
 }
-
-
-/* Webpage Links */
-
-#footer-nav-ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	padding: 3em 0 2em 0;
-}
-
-.footer-link {
-	flex-wrap: wrap;
-}
-
 
 /* Social */
 
@@ -504,7 +490,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding: 1em 0;
+	padding-top: 3em;
 }
 
 .social-link {
@@ -518,9 +504,9 @@ footer {
 
 #footer-p {
 	color: rgb(237,68,47); /*red*/
-	text-align: center;
-	margin: 0;
+	/* text-align: center; */
 	padding: 2em 0 2em 0;
+	font-weight: 300;
 }
 
 
