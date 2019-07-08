@@ -103,13 +103,10 @@ h2 {
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	color: rgb(0,116,141); /*dark blue*/
-	margin: 0 0 0.2em 0;
-	padding: 0;
-	line-height: 1em;
+	line-height: 1rem;
 	letter-spacing: 1px;
 }
 
@@ -125,16 +122,12 @@ h4 {
 p {
 	font-size: 1em;
 	font-family: 'Lato', sans-serif;
-	font-weight: normal;
 	color: rgb(41,47,61); /*navy*/
-	margin: 0;
-	padding: 0;
 }
 
 a {
-	font-size: 1em;
+	font-size: 1rem;
 	font-family: 'Lato', sans-serif;
-	font-weight: normal;
 	color: rgb(237,68,47); /*red*/
 	text-decoration: none;
 }
@@ -168,10 +161,6 @@ li {
 
 /* Nav */
 
-header a {
-	font-weight: 300;
-}
-
 #nav-bar-left {
 	display: inline-flex;
 	padding: 0.5em 0 0 0;
@@ -179,7 +168,7 @@ header a {
 	flex-wrap: wrap;
 }
 
-#nav-home, #nav-plans, #nav-shop {
+#nav-about, #nav-plans, #nav-shop {
 	padding-right: 3em;
 }
 
@@ -200,7 +189,7 @@ header a {
 /* Headings (h1 & h2 can be found in Global Styles)*/
 
 #main-headings {
-	margin-top: 15vh;
+	margin-top: 20vh;
 	margin-bottom: 15vh;
 	text-align: center;
 }
@@ -216,8 +205,7 @@ header a {
 
 #email-heading {
 	color: rgb(0,210,255); /*light blue*/
-	font-weight: 400;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	text-align: center;
 }
 
@@ -264,24 +252,25 @@ form {
 /* Overview
 ------------------------------*/
 #overview-container {
-	margin: 0 0 6em 0;
-	padding: 0;
+	margin: 1rem 0 7rem;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	position: relative;
 }
 
-.overview {
+.overview-item {
 	width: 48%;
 	min-width: 200px;
 	display: flex;
 	flex-direction: row;
 }
 
+#col-right {
+	margin-top: 2rem;
+}
+
 .overview-icon {
-	margin: 0;
 	padding-right: 0.5em;
 	max-width: 100px;
 	min-width: 50px;
@@ -289,13 +278,16 @@ form {
 }
 
 .overview-icon img {
-	margin: 0;
-	padding: 0;
 	width: 100%;
 	align-content: top;
 }
 
-.overview-txt p {
+.overview-heading {
+	color: rgb(0,116,141); /*dark blue*/
+	margin: 0 0 0.8rem 0;
+}
+
+.overview-heading p {
 	line-height: 1.3em;
 }
 
@@ -442,14 +434,13 @@ button:hover {
 
 .price-box p:first-child {
 	font-family: 'Dancing Script', cursive;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	color: rgb(237,68,47);
 	padding-bottom: 0em;
 	border-bottom: solid rgb(0,210,255); 
 	border-width: thin;
 	margin-bottom: 1.15em; /*keeps text even across boxes*/
 }
-
 
 
 /* Video
@@ -489,11 +480,7 @@ button:hover {
 footer {
 	background-color: rgb(41,47,61); /*navy*/ 
 	margin: 0 auto 0 auto; 
-	padding: 0 2em 0 2em;
-}
-
-footer p, footer a {
-	font-weight: 300;
+	padding: 0 2rem 0 2rem;
 }
 
 
@@ -517,12 +504,12 @@ footer p, footer a {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding: 2em 0;
+	padding: 1em 0;
 }
 
 .social-link {
 	padding: 0;
-	margin: 0.5em;
+	margin: 1em;
 	/*display: inline;*/
 }
 
@@ -558,7 +545,7 @@ footer p, footer a {
 
 
 @media screen and (max-width: 772px) {
-	.overview {
+	.overview-item {
 		width: 100%;
 	}
 	#col-right {
@@ -590,7 +577,7 @@ footer p, footer a {
   	}
 /* Adds back links (only once menu is clicked) with new format*/
 	.topnav.responsive #nav-bar-left,
-	.topnav.responsive #nav-home,
+	.topnav.responsive #nav-about,
 	.topnav.responsive #nav-plans, 
 	.topnav.responsive #nav-shop, 
 	.topnav.responsive #nav-bar-right, 
@@ -601,7 +588,7 @@ footer p, footer a {
 		float: none;
 		text-align: left;
 	}
-	.topnav.responsive #nav-home,
+	.topnav.responsive #nav-about,
 	.topnav.responsive #nav-shop,
 	.topnav.responsive #nav-up {
 		padding-bottom: 1.5em;
@@ -661,5 +648,12 @@ New Mobile First Code
 @media screen and (min-width: 663px) {
 	#header, #main, footer  {
 		width: 80%;	
+	}
+
+}
+
+@media screen and (min-width: 773px) {
+	#col-right {
+		margin-top: 0;
 	}
 }
