@@ -252,6 +252,7 @@ form {
 	color: #FFF;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	appearance: none;
 }
 
 #submit:hover {
