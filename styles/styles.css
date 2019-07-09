@@ -250,6 +250,8 @@ form {
 	font-weight: 300;
 	letter-spacing: 1px;
 	color: #FFF;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 
 #submit:hover {
