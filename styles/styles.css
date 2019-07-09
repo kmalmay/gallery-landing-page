@@ -88,14 +88,14 @@ html, body {
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 3.5rem;
 	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	color: rgb(0,210,255); /*light blue*/
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 1.3rem;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: rgb(237,68,47); /*red*/
@@ -279,6 +279,7 @@ form {
 }
 
 .overview-icon {
+	display: none;
 	padding-right: 0.5em;
 	max-width: 100px;
 	min-width: 50px;
@@ -601,24 +602,18 @@ footer {
 	}
 }
 
-/*phone sizes*/
-@media screen and (max-width: 390px) {
-	h1 {
-		font-size: 3.5rem;
-	}
-
-	h2 {
-		font-size: 1.3rem;
-	}
-
-	.overview-icon {
-		display: none;
-	}
-}
 /*----------------------------------------------------------------------------
 Mobile First Media Queries
 ----------------------------------------------------------------------------*/
 @media screen and (min-width: 580px) {
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+	
 	form {
 		flex-direction: row;
 		justify-content: center
@@ -632,6 +627,10 @@ Mobile First Media Queries
 
 	#submit {
 		margin-top: 0;
+	}
+
+	.overview-icon {
+		display: block;
 	}
 }
 
