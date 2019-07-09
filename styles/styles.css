@@ -59,6 +59,15 @@ table {
 	border-spacing: 0;
 }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
 
 /* Global Styles
 ------------------------------*/
@@ -239,6 +248,7 @@ form {
 	padding-left: 15px;
 }
 
+
 #submit {
 	background-color: rgba(237,68,47,0.75); /*red*/
 	border-radius: 5px;
@@ -250,9 +260,9 @@ form {
 	font-weight: 300;
 	letter-spacing: 1px;
 	color: #FFF;
-	-webkit-appearance: none;
+	/* -webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
+	appearance: none; */
 }
 
 #submit:hover {
