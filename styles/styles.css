@@ -273,7 +273,7 @@ form {
 /* Overview
 ------------------------------*/
 #overview-container {
-	margin: 1rem 0 7rem;
+	margin: 2rem 0 5rem;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -306,16 +306,28 @@ form {
 
 /* Shop Frames
 ------------------------------*/
-#frames-container {
-	padding: 3em 0 3em 0;
-	border: solid black;
+#shopframes-container {
+	padding: 3em 0 0 0;
 }
 
-/*#frames-container h2 {
+#shopframes-container h2 {
 	text-align: center;
-	padding-bottom: 1em;
+	font-size: 2rem;
 }
 
+.shopframes-p-wrapper {
+	line-height: 1.3rem;
+	margin: 2rem auto;
+}
+
+.shopframes-img {
+	height: auto;
+	width: 70%;
+	max-width: 400px;
+	display: block;
+	margin: 3rem auto;
+}
+/*
 .shop-frames {
 	
 }
@@ -627,12 +639,15 @@ footer {
 /*----------------------------------------------------------------------------
 Mobile First Media Queries
 ----------------------------------------------------------------------------*/
+
+/* General
+------------------------------*/
 @media screen and (min-width: 580px) {
 	h1 {
 		font-size: 5rem;
 	}
 
-	h2 {
+	.header-tagline {
 		font-size: 2rem;
 	}
 	
@@ -666,5 +681,46 @@ Mobile First Media Queries
 @media screen and (min-width: 773px) {
 	#col-right {
 		margin-top: 0;
+	}
+}
+
+/* Shop Frames Section
+------------------------------*/
+
+@media screen and (min-width: 580px) {
+	#shopframes-container {
+		position: relative;
+		height: 110vh;
+		border: solid black;
+	}
+	
+	.frame-img-topleft {
+		position: absolute;
+		width: 40%;
+		top: 15;
+		border: solid black;
+	}
+
+	.frames-p-topright {
+		position: absolute;
+		width: 45%;
+		top: 15;
+		right: 0;
+		border: solid black;
+	}
+
+	.frames-p-bottomleft {
+		position: absolute;
+		width: 45%;	
+		bottom:0;
+		border: solid black;
+	}
+
+	.frame-img-bottomright {
+		position: absolute;
+		width: 43%;
+		bottom: -6.5%;
+		right: 0;
+		border: solid black;
 	}
 }
